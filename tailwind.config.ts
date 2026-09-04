@@ -2,18 +2,20 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        muted: "var(--muted)",
-        "muted-foreground": "var(--muted-foreground)",
-        accent: "var(--accent)",
+        background: "#FFFFFF",
+        foreground: "#111111",
+        cmyk: {
+          cyan: "#00AEEF",
+          magenta: "#EC008C",
+          yellow: "#FFF200",
+          black: "#231F20",
+        }
       },
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],
